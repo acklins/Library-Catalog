@@ -107,3 +107,18 @@ available = catalog.get_available()
 print(f"Available: {len(available)} books")
 
 catalog.summary()
+
+#Test for EBook multile checkouts
+ebook = EBook("AI Engineering", "Chip Huyen", 2025, 15.2)
+
+print("Before checkouts:")
+print(ebook)
+
+ebook.check_out()
+ebook.check_out()
+ebook.check_out()
+print("\nAfter 3 checkouts:")
+print(ebook)
+
+print(f"Checkout count: {ebook.checkout_count}")
+
